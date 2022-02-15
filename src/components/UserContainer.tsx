@@ -22,19 +22,16 @@ const UserContainer = () => {
         dispatch(fetchUserRequest);
         try {
             const response = await axios.get('https://jsonplaceholder.typicode.com/users');
-            // const response = await axios.get('https://jsonplaceholder.typicode.com/phótos');
+            // const response = await axios.get('https://jsonplaceholder.typicode.com/photos');
             const users = response.data;
 
             users.forEach((user: any) => {
                 user.emailDraff = user.email
             });
 
-            console.log(users);
-
             users.map((user: any) => {
                 user.phoneDraff = user.phone;
             });
-            console.log(users);
 
             dispatch(fetchUserSuccess(users));
         } catch (error) {
