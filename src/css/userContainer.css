@@ -1,0 +1,34 @@
+.userInfo{
+    border: 1px solid #ccc;
+}
+
+.btn{
+    border: 1px solid #ccc;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+.btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn-confirm{
+    background-color: #48dbfb;
+    color: #fff;
+}
+
+.userLabel{
+    display: block;
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.userInput{
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    text-align: center;
+}
